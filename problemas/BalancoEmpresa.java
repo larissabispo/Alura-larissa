@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class BalancoEmpresa {
 	private HashMap<String, Divida> dividas = new HashMap<String, Divida>();
 
-	public void registraTesteDividas(String credor, String cnpjCredor, double valor) {
+	public void registraDividas(String credor, String cnpjCredor, double valor) {
 		Divida divida = new Divida();
 		divida.setTotal(valor);
 		divida.setCredor(credor);
