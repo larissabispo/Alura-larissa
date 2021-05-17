@@ -1,3 +1,4 @@
+package problemas;
     public class Pagamento {
       private String pagador;
       private String cnpjPagador;

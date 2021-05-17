@@ -1,9 +1,11 @@
+package problemas;
+
 import java.util.HashMap;
 
-public class BalançoEmpresa {
+public class BalancoEmpresa {
 	private HashMap<String, Divida> dividas = new HashMap<String, Divida>();
 
-	public void RegistraDivida(String credor, String cnpjCredor, double valor) {
+	public void registraDividas(String credor, String cnpjCredor, double valor) {
 		Divida divida = new Divida();
 		divida.setTotal(valor);
 		divida.setCredor(credor);

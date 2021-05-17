@@ -1,3 +1,5 @@
+package problemas;
+
 import java.util.ArrayList;
 
 public class Divida {
@@ -49,9 +51,10 @@ public class Divida {
 		this.valorPago += valor;
 
 	}
-	 public void registra(Pagamento pagamento) {
-	        this.pagamentos.add(pagamento);
-	        this.Paga(pagamento.getValor());
-	      }
+
+	public void registra(Pagamento pagamento) {
+		this.pagamentos.add(pagamento);
+		this.Paga(pagamento.getValor());
+	}
 
 }
