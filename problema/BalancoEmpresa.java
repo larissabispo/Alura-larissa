@@ -14,7 +14,7 @@ public class BalancoEmpresa {
 
 	}
 
-	public void pagamentoBoletos(String cnpjCredor, double valor, String nomePagador, String cnpjPagador) {
+	public void pagaDividaas(String cnpjCredor, double valor, String nomePagador, String cnpjPagador) {
 		Divida divida = dividas.get(cnpjCredor);
 		if (divida != null) {
 			Pagamento pagamento = new Pagamento();
@@ -22,7 +22,7 @@ public class BalancoEmpresa {
 			pagamento.setPagador(nomePagador);
 			pagamento.setValor(valor);
 			divida.Paga(valor);
-			divida.getPagamentos().add(pagamento);
+			divida.registra(pagamento);
 		}
 	}
 }
